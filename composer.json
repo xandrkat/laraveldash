@@ -1,0 +1,52 @@
+{
+  "name": "yal/laraveldash",
+  "description": "yaldash is a beautifully designed administration panel for Laravel",
+  "keywords": [
+    "laravel",
+    "laravel-application",
+    "vue",
+    "admin",
+    "admin-dashboard",
+    "crud",
+    "panel-dashboard",
+    "payment",
+    "php"
+  ],
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Yasser Ameur el idrissi",
+      "email": "spookyframework@gmail.com",
+      "role": "Maintainer",
+      "homepage": "https://github.com/getspooky"
+    }
+  ],
+  "require": {
+    
+  },
+  "autoload": {
+    "psr-4": {
+      "yal\\laraveldash\\": "lib/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "yal\\laraveldash\\Tests\\": "./tests/"
+    }
+  },
+  "require-dev": {
+    "laravel/browser-kit-testing": "^6.2",
+    "phpunit/phpunit": "^9.5"
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "3.1.0"
+    },
+    "laravel": {
+      "providers": [
+        "yal\\laraveldash\\Providers\\DashboardServiceProvider"
+      ]
+    }
+  },
+  "minimum-stability": "stable"
+}

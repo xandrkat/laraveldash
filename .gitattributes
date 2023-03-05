@@ -1,0 +1,3 @@
+# From https://github.com/Danimoth/gitattributes/blob/master/Web.gitattributes
+*.php linguist-language=PHP
+*.js linguist-language=PHP
