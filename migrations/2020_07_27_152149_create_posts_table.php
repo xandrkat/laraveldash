@@ -23,7 +23,7 @@ class CreatePostsTable extends Migration
     {
         Schema::create('posts', function (Blueprint $table) {
             $table->increments('id');
-            $table->unsignedBigInteger('user_id');
+            $table->unsignedInteger('user_id');
             $table->foreign("user_id")->references("id")->on("users")->onDelete('cascade');
             $table->string("title")->nullable();
             $table->longText("content")->nullable();
